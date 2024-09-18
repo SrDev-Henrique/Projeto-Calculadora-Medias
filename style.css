@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #E7E7E7;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.container, header, form, table, .bottom{
+    animation: fadeDownAnimation 1s ease forwards;
+}
+
+header h1 {
+    position: relative;
+    font-size: 40px;
+    font-weight: bold;
+    padding-right: 300px;
+}
+
+.container {
+    max-height: 100vh;
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+form {
+    position: relative;
+    display: flex;
+    max-width: 100%;
+    width: 100%;
+    justify-content: space-evenly;
+    margin-bottom: 56px;
+}
+
+form button {
+    position: relative;
+    border-radius: 6px;
+    right: 30px;
+    background-color: #010101;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+form input {
+    position: relative;
+    border-radius: 6px;
+    font-size: 20px;
+    background-color: #fff;
+    border: none;
+    padding: 6px;
+    right: 30px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+form input:hover {
+    box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.3) inset, 10px 10px 10px #f5f5f5;
+    transform: translateY(2px);
+}
+
+table {
+    width: 100%;
+}
+
+table th {
+    border-bottom: 2px solid #000;
+    padding: 16px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+table td {
+    padding: 16px 0;
+    text-align: center;
+    font-size: 18px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+table .atividade {
+    font-size: 24px;
+}
+
+tfoot {
+    opacity: 0;
+    transition: all 0.5s;
+    background: #000;
+    color: #fff;
+    border-radius: 20px;
+    width: 100%;
+}
+
+.bottom{
+    max-width: 960px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.button {
+    padding: 8px;
+    font-weight: bold;
+    font-size: 18px;
+    background-color: #010101;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    opacity: 1;
+}
+
+.button:hover,
+form button:hover {
+    background-color: #f5f5f5;
+    color: #000;
+    box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.3) inset, 10px 10px 10px #f5f5f5;
+}
+
+
+img {
+    height: 34px;
+    animation: FadeRightAnimation 1s ease forwards;
+}
+
+.resultado {
+    padding: 8px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #000;
+    border-radius: 3px;
+}
+
+.aprovado {
+    background-color: #009400;
+}
+
+.reprovado {
+    background-color: red;
+}
+
+.logo{
+    position: relative;
+    right: 10px;
+    height: 45px;
+}
+
+@keyframes fadeDownAnimation {
+    0% {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes FadeRightAnimation {
+    0% {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+    
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
