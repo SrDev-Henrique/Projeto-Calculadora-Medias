@@ -5,8 +5,8 @@ const atividades = [];
 const notas = [];
 const spanAprovado = '<span class="resultado aprovado">Aprovado</span>';
 const spanReprovado = '<span class="resultado reprovado">Reprovado</span>';
-const maxAtividades = parseFloat(prompt(`Digite a quantidade máxima de atividades!`));
-const notaMinima = parseFloat(prompt(`Digite a nota mínima!`));
+const maxAtividades = 5
+const notaMinima = 5
 
 function showMe() {
     document.querySelector('.foot').style.opacity = '1';  
